@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".Profile"
+        tools:showIn="@layout/activity_profile">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+
+
+                android:id="@+id/picture"
+                android:layout_width="580dp"
+                android:layout_height="171dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:adjustViewBounds="true"
+
+                android:contentDescription="@string/content_picture"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/picture"
+                tools:srcCompat="@drawable/picture" />
+
+            <TextView
+                android:id="@+id/myName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:maxLines="8"
+                android:text="@string/name"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+            <TextView
+                android:id="@+id/Track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/track"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/myName"
+                tools:text="@string/track" />
+
+            <TextView
+                android:id="@+id/content_track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:maxLines="25"
+                android:text="@string/content_track"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Track"
+                app:layout_constraintTop_toBottomOf="@+id/myName" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/country"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content_track" />
+
+            <TextView
+                android:id="@+id/content_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:maxLines="10"
+                android:text="@string/content_country"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/holo_blue_light"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/country"
+                app:layout_constraintTop_toBottomOf="@+id/content_track" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/email"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content_country" />
+
+            <TextView
+                android:id="@+id/content_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="38dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/content_email"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/holo_blue_light"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintStart_toEndOf="@+id/email"
+                app:layout_constraintTop_toBottomOf="@+id/content_country" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/phone"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content_email" />
+
+            <TextView
+                android:id="@+id/content_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/content_phone"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/holo_blue_light"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintStart_toEndOf="@+id/phone"
+                app:layout_constraintTop_toBottomOf="@+id/content_email" />
+
+            <TextView
+                android:id="@+id/slackUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/slack_username"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content_phone" />
+
+            <TextView
+                android:id="@+id/content_slack_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:text="@string/content_slack_username"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/holo_blue_light"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/slackUsername"
+                app:layout_constraintTop_toBottomOf="@+id/content_phone" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="395dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="18dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toTopOf="@+id/Track"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/myName" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

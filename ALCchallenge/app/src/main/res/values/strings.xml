@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ALC 4 phase 1</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_profile">My Profile</string>
+    <string name="title_activity_about_page">About ALC</string>
+    <string name="Profile">My Profile</string>
+    <string name="shareLink">Share ALC link</string>
+    <string name="about">About ALC</string>
+    <string name="track">Track: </string>
+    <string name="content_track">android</string>
+    <string name="country">Country: </string>
+    <string name="content_country">cameroon</string>
+    <string name="email">Email: </string>
+    <string name="content_email">konaken73@gmail.com</string>
+    <string name="phone">Phone Number: </string>
+    <string name="content_phone">237696 853 617</string>
+    <string name="slack_username">Slack Username : </string>
+    <string name="content_slack_username">\@konaken</string>
+    <string name="name">Kenneth Ze Ondoua Kona</string>
+    <string name="greetings">Welcome  To ALC 4.0</string>
+    <string name="content_picture">profile image</string>
+</resources>
